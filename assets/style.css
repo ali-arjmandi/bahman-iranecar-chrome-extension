@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url('./fonts/IRANSansWeb.eot');
+    /* IE9 Compat Modes */
+    src: url('./fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('./fonts/IRANSansWeb.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('./fonts/IRANSansWeb.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('./fonts/IRANSansWeb.ttf') format('truetype');
+    /* Safari, Android, iOS */
+}
+
+
+html * {
+    outline: 0 !important;
+}
+
+html,
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+    width: 450px;
+    min-height: 80px;
+    font-family: Roboto, "IRANSansWeb", sans-serif;
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+}

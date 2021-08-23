@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+  "name": "Bahman Motors Register",
+  "description": "This extension will help you to register faster.",
+  "version": "1.0",
+  "content_scripts":[
+      {
+        "matches":[
+          "https://*/*"
+        ],
+        "js": ["assets/jquery-3.6.0.min.js", "content.js"]
+      }
+    ],
+  "browser_action": {
+      "default_icon": "assets/icon.png",
+      "default_popup": "index.html"
+    },
+  "permissions": [
+      "activeTab",
+      "storage",
+      "<all_urls>"
+    ]
+  }

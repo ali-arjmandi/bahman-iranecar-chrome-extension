@@ -1,0 +1,195 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            ایرانی کار
+        </a>
+        <button id="cancelBtn" type="button" class="btn btn-sm btn-primary">بازگشت</button>
+    </div>
+</nav>
+<div class="card">
+    <div class="card-body" id="card_body">
+        <h5 class="card-title">ویرایش کاربر</h5>
+        <form id="form" class="row g-3">
+            <div class="col-6">
+                <label class="form-label form-label-sm">نام</label>
+                <input type="text" class="form-control form-control-sm" name="first_name">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">نام خانوادگی</label>
+                <input type="text" class="form-control form-control-sm" name="last_name">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">نام پدر</label>
+                <input type="text" class="form-control form-control-sm" name="fathers_name">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">کد ملی</label>
+                <input type="text" class="form-control form-control-sm" name="national_code">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">شماره شناسنامه</label>
+                <input type="text" class="form-control form-control-sm" name="identity_code">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">سریال شناسنامه</label>
+                <input type="text" class="form-control form-control-sm" name="identity_serial">
+            </div>
+            <div class="col-4">
+                <label class="form-label form-label-sm">روز تولد</label>
+                <input type="text" class="form-control form-control-sm" name="birth_date_dd">
+            </div>
+            <div class="col-4">
+                <label class="form-label form-label-sm">ماه تولد</label>
+                <input type="text" class="form-control form-control-sm" name="birth_date_mm">
+            </div>
+            <div class="col-4">
+                <label class="form-label form-label-sm">سال تولد</label>
+                <input type="text" class="form-control form-control-sm" name="birth_date_yy">
+            </div>
+            <div class="col-4">
+                <label class="form-label form-label-sm">روز صدور</label>
+                <input type="text" class="form-control form-control-sm" name="issuance_date_dd">
+            </div>
+            <div class="col-4">
+                <label class="form-label form-label-sm">ماه صدور</label>
+                <input type="text" class="form-control form-control-sm" name="issuance_date_mm">
+            </div>
+            <div class="col-4">
+                <label class="form-label form-label-sm">سال صدور</label>
+                <input type="text" class="form-control form-control-sm" name="issuance_date_yy">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">استان صدور</label>
+                <select class="form-control form-control-sm" name="issuance_place_province" id="sodurProvince">
+                    <option>--انتخاب کنید--</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">شهر صدور</label>
+                <select class="form-control form-control-sm" name="issuance_place_city" id="sodurCity"></select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">استان تولد</label>
+                <select class="form-control form-control-sm" name="birth_place_province" id="birthProvince">
+                    <option>--انتخاب کنید--</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">شهر تولد</label>
+                <select class="form-control form-control-sm" name="birth_place_city" id="birthCity"></select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">جنسیت</label>
+                <select class="form-control form-control-sm" name="sex" id="">
+                    <option>--انتخاب کنید--</option>
+                    <option>مرد</option>
+                    <option>زن</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">شغل</label>
+                <select class="form-control form-control-sm" name="occupation" id="">
+                    <option>--انتخاب کنید--</option>
+                    <option>آزاد</option>
+                    <option>خانه دار</option>
+                    <option>کارمند</option>
+                    <option>دانشجو</option>
+                    <option>فرهنگی</option>
+                    <option>خبرنگار</option>
+                    <option>پزشک</option>
+                    <option>هنرمند</option>
+                    <option>ورزشکار</option>
+                    <option>پرستار</option>
+                    <option>نظامی</option>
+                    <option>کارگر</option>
+                    <option>بازنشسته</option>
+                    <option>کشاورز و دامدار</option>
+                    <option>وکیل و حقوق دان</option>
+                    <option>سایر</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">نحوه آشنایی</label>
+                <select class="form-control form-control-sm" name="ashnaei" id="">
+                    <option>--انتخاب کنید--</option>
+                    <option>تلویزیون</option>
+                    <option>رادیو</option>
+                    <option>روزنامه</option>
+                    <option>مجلات</option>
+                    <option>بیلبورد</option>
+                    <option>پیامک</option>
+                    <option>سایت بهمن</option>
+                    <option>سایر سایتهای اینترنتی</option>
+                    <option>شبکه های اجتماعی</option>
+                    <option>نمایندگیها</option>
+                    <option>سایر موارد</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">نوع پلاک</label>
+                <select class="form-control form-control-sm" name="carPlaque" id="">
+                    <option>--انتخاب کنید--</option>
+                    <option>عمومی</option>
+                    <option>شخصی</option>
+                    <option>جانبازی</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">آدرس استان</label>
+                <select class="form-control form-control-sm" name="address_province" id="addressProvince">
+                    <option>--انتخاب کنید--</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">آدرس شهر</label>
+                <select class="form-control form-control-sm" name="address_city" id="addressCity"></select>
+            </div>
+            <div class="col-12">
+                <label class="form-label form-label-sm">خیابان اصلی</label>
+                <input type="text" class="form-control form-control-sm" name="street" id="">
+            </div>
+            <div class="col-12">
+                <label class="form-label form-label-sm">خیابان فرعی</label>
+                <input type="text" class="form-control form-control-sm" name="bystreet" id="">
+            </div>
+            <div class="col-12">
+                <label class="form-label form-label-sm">کوچه</label>
+                <input type="text" class="form-control form-control-sm" name="alley" id="">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">پلاک</label>
+                <input type="text" class="form-control form-control-sm" name="no" id="">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">کد پستی</label>
+                <input type="text" class="form-control form-control-sm" name="postal_code" id="">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">نام بانک</label>
+                <input type="text" class="form-control form-control-sm" name="bank_name" id="">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">شماره شبا</label>
+                <input type="text" class="form-control form-control-sm" name="sheba" id="">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">تلفن همراه</label>
+                <input type="text" class="form-control form-control-sm" name="mobile_number" id="">
+            </div>
+            <div class="col-6">
+                <label class="form-label form-label-sm">تلفن ثابت</label>
+                <input type="text" class="form-control form-control-sm" name="phone_number" id="">
+            </div>
+            <div class="col-12">
+                <label class="form-label form-label-sm">ایمیل</label>
+                <input type="email" class="form-control form-control-sm" name="email" id="">
+            </div>
+
+
+            <div class="col-12 mt-4">
+                <button type="button" id="editBtn" class="btn btn-sm btn-primary">ویرایش</button>
+            </div>
+        </form>
+    </div>
+</div>
